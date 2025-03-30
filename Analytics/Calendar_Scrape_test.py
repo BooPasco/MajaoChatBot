@@ -13,7 +13,7 @@ load_dotenv("/Users/chrispasco/Documents/MachineLearning/Majao_Chatbot/.env")
 SCOPES = ['https://www.googleapis.com/auth/calendar']
 CREDENTIALS_FILE = '/Users/chrispasco/Documents/MachineLearning/Majao_Chatbot/CalendarMonitor/client_secret.json'
 TOKEN_FILE = '/Users/chrispasco/Documents/MachineLearning/Majao_Chatbot/CalendarMonitor/token.json'
-TEACHER_RATE_COP = 35000  # Payment rate per hour for external teachers
+TEACHER_RATE_COP = int(os.getenv('TEACHER_RATE_COP')) # Payment rate per hour for external teachers
 OWNER_TEACHERS = {'chris', 'sindi'}  # Teachers who don't get paid per hour (case-insensitive)
 
 def get_calendar_service():

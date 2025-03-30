@@ -9,6 +9,8 @@ import uuid
 from typing import Dict
 import time
 
+#Currently Looks at different Calendar ( client_secret) - change to Casa for deployment
+
 # Logging setup
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
